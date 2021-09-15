@@ -50,6 +50,8 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: first_rails_production
   username: first_rails
   password: <%= ENV['FIRST_RAILS_DATABASE_PASSWORD'] %>
